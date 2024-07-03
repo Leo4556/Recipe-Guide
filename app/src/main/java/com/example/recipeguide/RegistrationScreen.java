@@ -1,6 +1,8 @@
 package com.example.recipeguide;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,5 +24,11 @@ public class RegistrationScreen extends AppCompatActivity {
         });
 
 
+
+    }
+
+    public void goMainScreen(View view){
+        Intent intent = new Intent(this, MainScreen.class);
+        startActivity(intent);
     }
 }
