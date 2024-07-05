@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recipe_Sausages_Fragment">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="1. Очистите картофель и нарежьте кубиками среднего размера.&#xA;2. Очистить сосиски от кожуры.&#xA;3. Выложите всё на дно формы для запекания и смажьте всё небольшим кол-вом подсолнечного масла.&#xA;4. Поместите форму в предварительно разогретую до 190 градусов духовку на 40 минут.&#xA;5. Достать форму и выложить готовое содержимое на блюдо."
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</FrameLayout>

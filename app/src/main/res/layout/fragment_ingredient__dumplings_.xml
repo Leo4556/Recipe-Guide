@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ingredient_Dumplings_Fragment">
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="- Пельмени&#xA;- Укроп (по вкусу)&#xA;- Вода&#xA;- Соль (по вкусу)&#xA;- Лавровый лист 1 шт.&#xA;- Свежемолотый перец (по вкусу)"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</FrameLayout>

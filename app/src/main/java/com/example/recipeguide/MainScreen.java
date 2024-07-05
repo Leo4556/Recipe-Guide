@@ -1,6 +1,12 @@
 package com.example.recipeguide;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.content.Context;
+import android.graphics.drawable.PictureDrawable;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,5 +28,39 @@ public class MainScreen extends AppCompatActivity {
         });
 
 
+
+
     }
+
+
+
+    public void goAddScreen(View view){
+        Intent intent = new Intent(this, AddScreen.class);
+        startActivity(intent);
+    }
+
+    public void goFavourites(View view){
+        Intent intent = new Intent(this, FavouritesScreen.class);
+        startActivity(intent);
+    }
+
+    public void goRecipeDumplings(View view){
+        Intent intent = new Intent(this, recipe_dumplings_activity.class);
+        startActivity(intent);
+    }
+
+
+    public void goRecipeRice(View view){
+        Intent intent = new Intent(this, Recipe_Rice_Activity.class);
+        startActivity(intent);
+    }
+
+
+    public void goRecipeSausages(View view){
+        Intent intent = new Intent(this, Recipe_Sausages_Activity.class);
+        startActivity(intent);
+    }
+
+
+
 }
