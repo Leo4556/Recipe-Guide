@@ -38,20 +38,32 @@ public class Recipe_Sausages_Activity extends AppCompatActivity {
         findViewById(R.id.recept).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Recipe_Sausages_Fragment receptFragment= new Recipe_Sausages_Fragment();
+                Recipe_Sausages_Fragment receptFragment = new Recipe_Sausages_Fragment();
                 setNewFragment(receptFragment);
             }
         });
 
     }
-    private void setNewFragment(Fragment fragment){
+
+    private void setNewFragment(Fragment fragment) {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.frame_layout2,fragment);
+        ft.replace(R.id.frame_layout2, fragment);
         ft.addToBackStack(null);
         ft.commit();
     }
 
-    public void goHome(View view){
+    public void goAddScreen(View view) {
+        Intent intent = new Intent(this, AddScreen.class);
+        startActivity(intent);
+    }
+
+    public void goHome(View view) {
         Intent intent = new Intent(this, MainScreen.class);
         startActivity(intent);
-    }}
+    }
+
+    public void goFavourites(View view) {
+        Intent intent = new Intent(this, FavouritesScreen.class);
+        startActivity(intent);
+    }
+}

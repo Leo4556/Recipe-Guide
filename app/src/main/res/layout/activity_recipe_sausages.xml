@@ -5,6 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
+    android:backgroundTint="#fff"
     tools:context=".Recipe_Sausages_Activity">
 
     <ImageView
@@ -55,6 +57,7 @@
             android:layout_weight="1"
             android:backgroundTint="#00FFFFFF"
             android:contentDescription="plus"
+            android:onClick="goAddScreen"
             app:srcCompat="@drawable/button_plus" />
 
         <ImageButton
@@ -64,6 +67,7 @@
             android:layout_weight="1"
             android:backgroundTint="#00FFFFFF"
             android:contentDescription="serdce"
+            android:onClick="goFavourites"
             app:srcCompat="@drawable/button_heart" />
 
         <ImageButton

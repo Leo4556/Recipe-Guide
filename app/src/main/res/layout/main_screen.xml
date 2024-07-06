@@ -21,30 +21,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/panel" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/button_search_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="goToSearch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome"
         app:srcCompat="@drawable/button_search_bar" />
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:hint="Поиск..."
-        android:inputType="text"
-        android:textColor="#000000"
-        android:textColorHint="#80000000"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="@+id/button_search_bar"
-        app:layout_constraintTop_toTopOf="@+id/button_search_bar" />
 
     <TextView
         android:id="@+id/welcome"

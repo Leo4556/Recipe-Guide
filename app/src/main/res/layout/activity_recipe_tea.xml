@@ -7,18 +7,18 @@
     android:layout_height="match_parent"
     android:background="#fff"
     android:backgroundTint="#fff"
-    tools:context=".recipe_dumplings_activity">
+    tools:context=".Recipe_Tea_Activity">
 
     <ImageView
-        android:id="@+id/pelmeni_recept"
+        android:id="@+id/tea_recipe"
         android:layout_width="339dp"
         android:layout_height="194dp"
         android:layout_marginTop="5dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_pelmeni"
-        app:srcCompat="@drawable/dumplings_big_for_activity" />
+        app:layout_constraintTop_toBottomOf="@+id/name_ric"
+        app:srcCompat="@drawable/button_add_photo" />
 
     <ImageView
         android:id="@+id/nizhny_panel"
@@ -81,19 +81,18 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/name_pelmeni"
+        android:id="@+id/name_ric"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Пельмени с укропом \n &quot;обыкновенные&quot;"
-        android:textAlignment="center"
         android:fontFamily="@font/montserrat"
+        android:text="Чай"
+        android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
@@ -104,7 +103,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Cooking_time">
         <ImageButton
-            android:id="@+id/ingredient"
+            android:id="@+id/ingridient"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -113,7 +112,7 @@
             app:srcCompat="@drawable/button_ingredients" />
 
         <ImageButton
-            android:id="@+id/recipe"
+            android:id="@+id/recept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -133,32 +132,28 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <FrameLayout
-            android:id="@+id/frame_layout"
+            android:id="@+id/frame_layout1"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/nizhny_panel"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-            >
+            android:layout_marginEnd="10dp">
 
         </FrameLayout>
-
     </ScrollView>
+
+
     <TextView
         android:id="@+id/Cooking_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/montserrat"
-        android:text="Время приготовления 20 мин"
+        android:text="Время приготовления 10 мин"
         android:textColor="#80000000"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pelmeni_recept" />
+        app:layout_constraintTop_toBottomOf="@+id/tea_recipe" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

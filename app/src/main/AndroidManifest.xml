@@ -16,10 +16,19 @@
         android:theme="@style/Theme.RecipeGuide"
         tools:targetApi="31">
         <activity
-            android:name=".Recipe_Sausages_Activity"
+            android:name=".Recipe_Tea_Activity"
             android:exported="false" />
         <activity
-            android:name=".Recipe_Saisages_Activity"
+            android:name=".Recipe_Napoleon_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Recipe_Olivie_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Recipe_Sausages_Activity"
             android:exported="false" />
         <activity
             android:name=".Recipe_Rice_Activity"

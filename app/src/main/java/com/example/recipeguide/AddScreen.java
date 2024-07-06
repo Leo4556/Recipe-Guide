@@ -113,14 +113,14 @@ public class AddScreen extends AppCompatActivity {
         ingredientsFragment = new IngredientsFragment();
         recipeFragment = new RecipeFragment();
 
-        button_save.setOnClickListener(v -> {
+       /* button_save.setOnClickListener(v -> {
             if (validateInputs()) {
                 saveData();
             } else {
                 // Show an error message to the user
                 Toast.makeText(AddScreen.this, "Заполните все поля", Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
@@ -202,10 +202,26 @@ public class AddScreen extends AppCompatActivity {
     }
 
 
-    public void goMainScreen(View view) {
+    public void goAddScreen(View view){
+        Intent intent = new Intent(this, AddScreen.class);
+        startActivity(intent);
+    }
+
+    public void goHome(View view){
         Intent intent = new Intent(this, MainScreen.class);
         startActivity(intent);
     }
+
+    public void goFavourites(View view){
+        Intent intent = new Intent(this, FavouritesScreen.class);
+        startActivity(intent);
+    }
+
+    public void goTea(View view){
+        Intent intent = new Intent(this, Recipe_Tea_Activity.class);
+        startActivity(intent);
+    }
+
 
 
 

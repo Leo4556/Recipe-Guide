@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ingredients_Olivie_Fragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="- картофель 5 шт.&#xA;- морковь 2 шт.&#xA;- вареная колбаса 450 г&#xA;- яйца 4 шт.&#xA;- соленые огурцы 600 г&#xA;- банка консервированного горошка 1 шт.&#xA;- лук 1 шт.&#xA;- майонез (по вкусу)&#xA;- соль (по вкусу)"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</FrameLayout>

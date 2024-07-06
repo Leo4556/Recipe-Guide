@@ -5,20 +5,21 @@
     android:id="@+id/addScreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
+    android:backgroundTint="#fff"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".AddScreen">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="410dp"
+        android:layout_width="370dp"
+        android:layout_height="402dp"
         android:orientation="vertical"
-        android:padding="16dp"
-        tools:context=".AddScreen"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".AddScreen">
 
         <!-- Название рецепта с кнопками назад и добавить в избранное -->
         <RelativeLayout
@@ -94,25 +95,25 @@
 
             <ImageButton
                 android:id="@+id/ingredients_button"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/app_name"
-                android:padding="11dp"
                 android:src="@drawable/button_ingredients"
-                android:text="Ингридиенты" />
+                android:text="Ингридиенты"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
                 android:id="@+id/recipe_button"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/app_name"
-                android:padding="8dp"
                 android:src="@drawable/button_recipe"
-                android:text="Рецепт" />
+                android:text="Рецепт"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
@@ -121,13 +122,15 @@
 
     <FrameLayout
         android:id="@+id/frame_layout_ingredients"
-        android:layout_width="360dp"
-        android:layout_height="320dp"
-        android:layout_marginTop="410dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
         android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/button_save"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
 
     </FrameLayout>
 
@@ -139,6 +142,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/panel" />
+
+    <ImageButton
+        android:id="@+id/button_save"
+        android:layout_width="141dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="#FFDDAF"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/app_name"
+        android:fontFamily="@font/montserrat"
+        android:onClick="goTea"
+        android:src="@drawable/button_save"
+        android:text="Сохранить"
+        android:textColorLink="#FBDAAC"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -190,22 +211,5 @@
             android:contentDescription="shesterenka"
             app:srcCompat="@drawable/button_gear" />
     </LinearLayout>
-
-    <ImageButton
-        android:id="@+id/button_save"
-        android:layout_width="160dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="696dp"
-        android:layout_marginEnd="8dp"
-        android:background="#FFDDAF"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="@string/app_name"
-        android:fontFamily="@font/montserrat"
-        android:onClick="saveData"
-        android:src="@drawable/button_save"
-        android:text="Сохранить"
-        android:textColorLink="#FBDAAC"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

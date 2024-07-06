@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.content.Context;
 import android.graphics.drawable.PictureDrawable;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -26,8 +28,6 @@ public class MainScreen extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-
 
 
     }
@@ -58,6 +58,16 @@ public class MainScreen extends AppCompatActivity {
 
     public void goRecipeSausages(View view){
         Intent intent = new Intent(this, Recipe_Sausages_Activity.class);
+        startActivity(intent);
+    }
+
+    public void goToSearch(View view) {
+        Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
+    }
+
+    public void goTea(View view) {
+        Intent intent = new Intent(this, Recipe_Tea_Activity.class);
         startActivity(intent);
     }
 

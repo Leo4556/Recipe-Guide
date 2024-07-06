@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ingredients_Napoleon_Fragment">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Для теста:&#xA;- 4 стакана муки&#xA;- 200 г сливочного масла&#xA;- 1 стакан холодной воды&#xA;- 1 столовая ложка уксуса&#xA;- Щепотка соли&#xA;&#xA;Для крема:&#xA;- 1 литр молока&#xA;- 2 стакана сахара&#xA;- 4 яйца&#xA;- 4 столовые ложки муки&#xA;- 200 г сливочного масла&#xA;- Ванилин по вкусу&#xA;"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</FrameLayout>

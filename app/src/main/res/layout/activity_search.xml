@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,39 +8,37 @@
     android:layout_height="match_parent"
     android:background="#fff"
     android:backgroundTint="#fff"
-    tools:context=".FavouritesScreen">
+    tools:context=".SearchActivity">
 
-    <TextView
-        android:id="@+id/favourites"
-        android:layout_width="wrap_content"
+    <SearchView
+        android:id="@+id/search_field"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="195dp"
-        android:alpha="1"
-        android:fontFamily="@font/montserrat"
-        android:text="Избранное"
-        android:textColor="#000"
-        android:textSize="35dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Поиск..."
+        android:inputType="text"
+        android:background="#FFDDAF"
+        android:textColor="#000000"
+        android:textColorHint="#80000000"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:contentDescription="@string/app_name"
-        app:layout_constraintBottom_toTopOf="@+id/panel"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/favourites" />
+        app:layout_constraintTop_toBottomOf="@id/search_field" />
 
     <ListView
         android:id="@+id/listView"
@@ -52,16 +51,14 @@
 
 
     <ImageView
-        android:id="@+id/panel"
+        android:id="@+id/imageView4"
         android:layout_width="390dp"
         android:layout_height="73dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/panel" />
-
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="392dp"
         android:layout_height="72dp"
         android:layout_marginEnd="1dp"
@@ -72,17 +69,17 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
-            android:id="@+id/button_home"
+            android:id="@+id/imageButton7"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#00FFFFFF"
             android:contentDescription="home"
-            android:onClick="goMainScreen"
+            android:onClick="goHome"
             app:srcCompat="@drawable/button_home" />
 
         <ImageButton
-            android:id="@+id/button_plus"
+            android:id="@+id/imageButton8"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -92,7 +89,7 @@
             app:srcCompat="@drawable/button_plus" />
 
         <ImageButton
-            android:id="@+id/button_heart"
+            android:id="@+id/imageButton9"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -100,9 +97,8 @@
             android:contentDescription="serdce"
             android:onClick="goFavourites"
             app:srcCompat="@drawable/button_heart" />
-
         <ImageButton
-            android:id="@+id/button_gear"
+            android:id="@+id/imageButton10"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -110,6 +106,7 @@
             android:contentDescription="shesterenka"
             app:srcCompat="@drawable/button_gear" />
     </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
